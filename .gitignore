@@ -1,0 +1,36 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Datasets ---
+# Image datasets get large fast and don't belong in git history. Either
+# host them elsewhere (Kaggle, Google Drive, Roboflow, Git LFS, a release
+# asset) and document the link in the README, or keep a small sample
+# committed for demo purposes and .gitignore the rest.
+images/
+labels/
+dataset/
+real_images/
+real_labels/
+real_dataset/
+
+# --- Trained model weights ---
+# Same reasoning as datasets -- these are large binaries. Consider
+# publishing weights as a GitHub Release asset instead of committing them.
+runs/
+*.pt
+*.onnx
+
+# --- Debug/scratch output from this project's scripts ---
+debug_crops/
+debug_real/
